@@ -9,3 +9,11 @@
     font-size: 16px;
     font-weight: bold;
 }
+
+.button(@background, @color){
+    background: @background;
+          color: @color;
+    &:hover{
+      background: lighten(@background, 15%);
+    }
+  }
